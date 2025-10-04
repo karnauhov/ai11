@@ -161,6 +161,18 @@ void debugLogGlobalProperty(
           });
 }
 
+void debugLogAppConstant() {
+  debouncedDebugLogging(
+      '01fb7fae5dd1febbd23f5104f58cd88e8443668b',
+      () => {
+            'event_type': 'variable',
+            'data_source': 'appConstant',
+            'data': AppConstantDebugData(
+                    values: FFAppConstants.toDebugSerializableMap())
+                .serializedBufferString,
+          });
+}
+
 void debugLogWidgetClass(FlutterFlowModel widgetClassModel) {
   WidgetsBinding.instance.addPostFrameCallback(
     (_) {

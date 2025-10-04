@@ -1,4 +1,7 @@
 # AI11
 
-Personal website of Oleh Karnaukhov - a professional portfolio (my skills, completed projects, experience and business services).
+A new Flutter project.
 
+## Getting Started
+
+FlutterFlow projects are built to run on the Flutter _stable_ release.

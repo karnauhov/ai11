@@ -16,6 +16,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
+  debugLogAppConstant();
 
   final originalErrorWidgetBuilder = ErrorWidget.builder;
   ErrorWidget.builder = (FlutterErrorDetails details) {
@@ -147,7 +148,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'Oleh Karnaukhov — Fullstack Developer',
+      title: 'Oleh Karnaukhov - Fullstack Developer',
       localizationsDelegates: [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
