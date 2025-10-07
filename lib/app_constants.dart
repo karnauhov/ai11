@@ -18,6 +18,7 @@ abstract class FFAppConstants {
   static const String gitHubURL = 'https://github.com/karnauhov';
   static const String freelancehuntURL =
       'https://freelancehunt.com/freelancer/oleh_karnaukhov.html';
+  static const String telegramURL = 'https://t.me/karnauhov';
   static Map<String, DebugDataField> toDebugSerializableMap() => {
         'websiteURL': debugSerializeParam(
           websiteURL,
@@ -145,6 +146,16 @@ abstract class FFAppConstants {
               'https://app.flutterflow.io/project/ai11-fcaxqx?tab=appValues&appValuesTab=constant',
           searchReference:
               'reference=EiIKGgoQZnJlZWxhbmNlaHVudFVSTBIGYTNiOHBjcgIIA3oAWhBmcmVlbGFuY2VodW50VVJM',
+          name: 'String',
+          nullable: false,
+        ),
+        'telegramURL': debugSerializeParam(
+          telegramURL,
+          ParamType.String,
+          link:
+              'https://app.flutterflow.io/project/ai11-fcaxqx?tab=appValues&appValuesTab=constant',
+          searchReference:
+              'reference=Eh0KFQoLdGVsZWdyYW1VUkwSBmdjYWVxdnICCAN6AFoLdGVsZWdyYW1VUkw=',
           name: 'String',
           nullable: false,
         )

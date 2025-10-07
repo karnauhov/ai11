@@ -197,54 +197,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation9': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 150.0.ms,
-            duration: 1000.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation10': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 250.0.ms,
-            duration: 1100.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation11': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 250.0.ms,
-            duration: 1100.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation12': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 450.0.ms,
-            duration: 1300.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
       'textOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -257,7 +209,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation13': AnimationInfo(
+      'containerOnPageLoadAnimation9': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -269,7 +221,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation14': AnimationInfo(
+      'containerOnPageLoadAnimation10': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -293,7 +245,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation15': AnimationInfo(
+      'containerOnPageLoadAnimation11': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -305,7 +257,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation16': AnimationInfo(
+      'containerOnPageLoadAnimation12': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -317,7 +269,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation17': AnimationInfo(
+      'containerOnPageLoadAnimation13': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -341,7 +293,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation18': AnimationInfo(
+      'containerOnPageLoadAnimation14': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           MoveEffect(
@@ -360,7 +312,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation19': AnimationInfo(
+      'containerOnPageLoadAnimation15': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -372,7 +324,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation20': AnimationInfo(
+      'containerOnPageLoadAnimation16': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -396,7 +348,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation21': AnimationInfo(
+      'containerOnPageLoadAnimation17': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -408,7 +360,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation22': AnimationInfo(
+      'containerOnPageLoadAnimation18': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -420,7 +372,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation23': AnimationInfo(
+      'containerOnPageLoadAnimation19': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -429,54 +381,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
             duration: 1100.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation24': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 150.0.ms,
-            duration: 1000.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation25': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 250.0.ms,
-            duration: 1100.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation26': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 250.0.ms,
-            duration: 1100.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation27': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeOut,
-            delay: 450.0.ms,
-            duration: 1300.0.ms,
-            begin: 0.0,
-            end: 1.0,
           ),
         ],
       ),
@@ -796,42 +700,38 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        // OpenLinkedin
+                                        // OpenTelegram
                                         await launchURL(
-                                            FFAppConstants.linkedinURL);
+                                            FFAppConstants.telegramURL);
                                       },
-                                      child: Text(
-                                        'LinkedIn',
-                                        style: FlutterFlowTheme.of(context)
-                                            .bodyMedium
-                                            .override(
-                                              font: GoogleFonts.roboto(
-                                                fontWeight:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontWeight,
-                                                fontStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .fontStyle,
+                                      child: Container(
+                                        width: 30.0,
+                                        height: 30.0,
+                                        decoration: BoxDecoration(
+                                          color: FlutterFlowTheme.of(context)
+                                              .accent3,
+                                          borderRadius:
+                                              BorderRadius.circular(24.0),
+                                        ),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              width: 20.0,
+                                              height: 20.0,
+                                              decoration: BoxDecoration(
+                                                image: DecorationImage(
+                                                  fit: BoxFit.cover,
+                                                  image: Image.asset(
+                                                    'assets/images/telegram.png',
+                                                  ).image,
+                                                ),
                                               ),
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .accent3,
-                                              fontSize: 14.0,
-                                              letterSpacing: 0.0,
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .fontStyle,
-                                              decoration:
-                                                  TextDecoration.underline,
-                                              lineHeight: 1.3,
                                             ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ].divide(SizedBox(width: 5.0)),
@@ -1080,71 +980,41 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                                   ),
                                 ),
-                                Container(
-                                  width: 300.0,
-                                  decoration: BoxDecoration(),
-                                  child: Visibility(
-                                    visible: responsiveVisibility(
-                                      context: context,
-                                      phone: false,
-                                      tablet: false,
-                                      tabletLandscape: false,
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    // OpenTelegram
+                                    await launchURL(FFAppConstants.telegramURL);
+                                  },
+                                  child: Container(
+                                    width: 46.0,
+                                    height: 46.0,
+                                    decoration: BoxDecoration(
+                                      color:
+                                          FlutterFlowTheme.of(context).accent3,
+                                      borderRadius: BorderRadius.circular(24.0),
                                     ),
-                                    child: Row(
+                                    child: Column(
                                       mainAxisSize: MainAxisSize.max,
-                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
                                       children: [
-                                        InkWell(
-                                          splashColor: Colors.transparent,
-                                          focusColor: Colors.transparent,
-                                          hoverColor: Colors.transparent,
-                                          highlightColor: Colors.transparent,
-                                          onTap: () async {
-                                            // OpenLinkedin
-                                            await launchURL(
-                                                FFAppConstants.linkedinURL);
-                                          },
-                                          child: Text(
-                                            'LinkedIn',
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  font: GoogleFonts.roboto(
-                                                    fontWeight:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium
-                                                            .fontWeight,
-                                                    fontStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium
-                                                            .fontStyle,
-                                                  ),
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .accent3,
-                                                  fontSize: 16.0,
-                                                  letterSpacing: 0.0,
-                                                  fontWeight:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMedium
-                                                          .fontWeight,
-                                                  fontStyle:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .bodyMedium
-                                                          .fontStyle,
-                                                  decoration:
-                                                      TextDecoration.underline,
-                                                  lineHeight: 1.3,
-                                                ),
+                                        Container(
+                                          width: 32.0,
+                                          height: 32.0,
+                                          decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: Image.asset(
+                                                'assets/images/telegram.png',
+                                              ).image,
+                                            ),
                                           ),
                                         ),
-                                      ]
-                                          .divide(SizedBox(width: 5.0))
-                                          .addToEnd(SizedBox(width: 10.0)),
+                                      ],
                                     ),
                                   ),
                                 ),
@@ -2067,141 +1937,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                 ),
                               ),
-                              if (false)
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 50.0, 0.0, 0.0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    height: 117.0,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
-                                    ),
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            30.0, 0.0, 30.0, 0.0),
-                                        child: Container(
-                                          decoration: BoxDecoration(),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceEvenly,
-                                            children: [
-                                              InkWell(
-                                                splashColor: Colors.transparent,
-                                                focusColor: Colors.transparent,
-                                                hoverColor: Colors.transparent,
-                                                highlightColor:
-                                                    Colors.transparent,
-                                                onTap: () async {
-                                                  await launchURL(
-                                                      'https://www.aishoply.com/');
-                                                  HapticFeedback.heavyImpact();
-                                                },
-                                                child: Container(
-                                                  width: 192.0,
-                                                  height: 66.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.contain,
-                                                      image: Image.asset(
-                                                        'assets/images/zyora.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ).animateOnPageLoad(animationsMap[
-                                                  'containerOnPageLoadAnimation9']!),
-                                              InkWell(
-                                                splashColor: Colors.transparent,
-                                                focusColor: Colors.transparent,
-                                                hoverColor: Colors.transparent,
-                                                highlightColor:
-                                                    Colors.transparent,
-                                                onTap: () async {
-                                                  await launchURL(
-                                                      'https://actualoil.com/');
-                                                  HapticFeedback.heavyImpact();
-                                                },
-                                                child: Container(
-                                                  width: 220.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.contain,
-                                                      image: Image.asset(
-                                                        'assets/images/clyra.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ).animateOnPageLoad(animationsMap[
-                                                  'containerOnPageLoadAnimation10']!),
-                                              InkWell(
-                                                splashColor: Colors.transparent,
-                                                focusColor: Colors.transparent,
-                                                hoverColor: Colors.transparent,
-                                                highlightColor:
-                                                    Colors.transparent,
-                                                onTap: () async {
-                                                  await launchURL(
-                                                      'https://actualoil.com/');
-                                                  HapticFeedback.heavyImpact();
-                                                },
-                                                child: Container(
-                                                  width: 180.0,
-                                                  height: 65.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.contain,
-                                                      image: Image.asset(
-                                                        'assets/images/brenzi.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ).animateOnPageLoad(animationsMap[
-                                                  'containerOnPageLoadAnimation11']!),
-                                              InkWell(
-                                                splashColor: Colors.transparent,
-                                                focusColor: Colors.transparent,
-                                                hoverColor: Colors.transparent,
-                                                highlightColor:
-                                                    Colors.transparent,
-                                                onTap: () async {
-                                                  await launchURL(
-                                                      'https://marketplace.flutterflow.io/creator/b3e14e0d2ec9e996cf367834b87101f95d678d59');
-                                                  HapticFeedback.heavyImpact();
-                                                },
-                                                child: Container(
-                                                  width: 180.0,
-                                                  height: 60.0,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      fit: BoxFit.contain,
-                                                      image: Image.asset(
-                                                        'assets/images/avion.png',
-                                                      ).image,
-                                                    ),
-                                                  ),
-                                                ),
-                                              ).animateOnPageLoad(animationsMap[
-                                                  'containerOnPageLoadAnimation12']!),
-                                            ]
-                                                .divide(SizedBox(width: 40.0))
-                                                .addToStart(
-                                                    SizedBox(width: 30.0))
-                                                .addToEnd(
-                                                    SizedBox(width: 30.0)),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
                               if (false)
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -5652,7 +5387,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation13']!),
+                                                                'containerOnPageLoadAnimation9']!),
                                                         Container(
                                                           width: 175.0,
                                                           height: 261.0,
@@ -5676,7 +5411,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation14']!),
+                                                                'containerOnPageLoadAnimation10']!),
                                                       ],
                                                     ),
                                                   ),
@@ -5776,7 +5511,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation15']!),
+                                                            'containerOnPageLoadAnimation11']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -5825,7 +5560,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation16']!),
+                                                            'containerOnPageLoadAnimation12']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -5874,7 +5609,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation17']!),
+                                                            'containerOnPageLoadAnimation13']!),
                                                   ].divide(
                                                       SizedBox(height: 10.0)),
                                                 ),
@@ -6386,94 +6121,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                 ),
                               ),
-                              if (false)
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 20.0, 0.0, 0.0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
-                                    ),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 20.0, 0.0, 20.0),
-                                      child: Container(
-                                        width: 1000.0,
-                                        height: 98.0,
-                                        decoration: BoxDecoration(),
-                                        child: Container(
-                                          width: double.infinity,
-                                          child: CarouselSlider(
-                                            items: [
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/google.png',
-                                                  fit: BoxFit.contain,
-                                                ),
-                                              ),
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/flutterflow.png',
-                                                  width: 200.0,
-                                                  height: 200.0,
-                                                  fit: BoxFit.contain,
-                                                ),
-                                              ),
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/samsung.png',
-                                                  width: 200.0,
-                                                  height: 200.0,
-                                                  fit: BoxFit.contain,
-                                                ),
-                                              ),
-                                              ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/microsoft.png',
-                                                  width: 200.0,
-                                                  height: 200.0,
-                                                  fit: BoxFit.contain,
-                                                ),
-                                              ),
-                                            ],
-                                            carouselController:
-                                                _model.carouselController3 ??=
-                                                    CarouselSliderController(),
-                                            options: CarouselOptions(
-                                              initialPage: 1,
-                                              viewportFraction: 0.35,
-                                              disableCenter: true,
-                                              enlargeCenterPage: true,
-                                              enlargeFactor: 0.65,
-                                              enableInfiniteScroll: true,
-                                              scrollDirection: Axis.horizontal,
-                                              autoPlay: true,
-                                              autoPlayAnimationDuration:
-                                                  Duration(milliseconds: 1100),
-                                              autoPlayInterval: Duration(
-                                                  milliseconds: (1100 + 2000)),
-                                              autoPlayCurve: Curves.linear,
-                                              pauseAutoPlayInFiniteScroll: true,
-                                              onPageChanged: (index, _) =>
-                                                  _model.carouselCurrentIndex3 =
-                                                      index,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
                               if (false)
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -9092,7 +8739,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               ),
                                             ],
                                             carouselController:
-                                                _model.carouselController4 ??=
+                                                _model.carouselController3 ??=
                                                     CarouselSliderController(),
                                             options: CarouselOptions(
                                               initialPage: 1,
@@ -9110,7 +8757,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               autoPlayCurve: Curves.linear,
                                               pauseAutoPlayInFiniteScroll: true,
                                               onPageChanged: (index, _) =>
-                                                  _model.carouselCurrentIndex4 =
+                                                  _model.carouselCurrentIndex3 =
                                                       index,
                                             ),
                                           ),
@@ -9469,7 +9116,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ],
                                                         carouselController: _model
-                                                                .carouselController5 ??=
+                                                                .carouselController4 ??=
                                                             CarouselSliderController(),
                                                         options:
                                                             CarouselOptions(
@@ -9486,7 +9133,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           autoPlay: false,
                                                           onPageChanged: (index,
                                                                   _) =>
-                                                              _model.carouselCurrentIndex5 =
+                                                              _model.carouselCurrentIndex4 =
                                                                   index,
                                                         ),
                                                       ),
@@ -9964,7 +9611,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
-                                            'containerOnPageLoadAnimation18']!),
+                                            'containerOnPageLoadAnimation14']!),
                                       ),
                                     ],
                                   ),
@@ -10046,7 +9693,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation19']!),
+                                                                    'containerOnPageLoadAnimation15']!),
                                                             Container(
                                                               width: 175.0,
                                                               height: 261.0,
@@ -10071,7 +9718,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation20']!),
+                                                                    'containerOnPageLoadAnimation16']!),
                                                           ],
                                                         ),
                                                       ),
@@ -10176,7 +9823,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation21']!),
+                                                                'containerOnPageLoadAnimation17']!),
                                                         InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -10226,7 +9873,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation22']!),
+                                                                'containerOnPageLoadAnimation18']!),
                                                         InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -10276,7 +9923,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation23']!),
+                                                                'containerOnPageLoadAnimation19']!),
                                                       ].divide(SizedBox(
                                                           height: 10.0)),
                                                     ),
@@ -10817,137 +10464,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                                 ),
                               ),
-                              if (false)
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0.0, 20.0, 0.0, 0.0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
-                                    ),
-                                    child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 20.0, 0.0, 20.0),
-                                      child: Container(
-                                        width: 1000.0,
-                                        height: 98.0,
-                                        decoration: BoxDecoration(),
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceEvenly,
-                                          children: [
-                                            InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                await launchURL(
-                                                    'https://www.aishoply.com/');
-                                                HapticFeedback.heavyImpact();
-                                              },
-                                              child: Container(
-                                                width: 130.0,
-                                                height: 66.0,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.contain,
-                                                    image: Image.asset(
-                                                      'assets/images/microsoft.png',
-                                                    ).image,
-                                                  ),
-                                                ),
-                                              ),
-                                            ).animateOnPageLoad(animationsMap[
-                                                'containerOnPageLoadAnimation24']!),
-                                            InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                await launchURL(
-                                                    'https://actualoil.com/');
-                                                HapticFeedback.heavyImpact();
-                                              },
-                                              child: Container(
-                                                width: 147.0,
-                                                height: 73.0,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.contain,
-                                                    image: Image.asset(
-                                                      'assets/images/flutterflow.png',
-                                                    ).image,
-                                                  ),
-                                                ),
-                                              ),
-                                            ).animateOnPageLoad(animationsMap[
-                                                'containerOnPageLoadAnimation25']!),
-                                            InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                await launchURL(
-                                                    'https://actualoil.com/');
-                                                HapticFeedback.heavyImpact();
-                                              },
-                                              child: Container(
-                                                width: 130.0,
-                                                height: 36.0,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.contain,
-                                                    image: Image.asset(
-                                                      'assets/images/google.png',
-                                                    ).image,
-                                                  ),
-                                                ),
-                                              ),
-                                            ).animateOnPageLoad(animationsMap[
-                                                'containerOnPageLoadAnimation26']!),
-                                            InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                await launchURL(
-                                                    'https://marketplace.flutterflow.io/creator/b3e14e0d2ec9e996cf367834b87101f95d678d59');
-                                                HapticFeedback.heavyImpact();
-                                              },
-                                              child: Container(
-                                                width: 130.0,
-                                                height: 73.0,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    fit: BoxFit.contain,
-                                                    image: Image.asset(
-                                                      'assets/images/samsung.png',
-                                                    ).image,
-                                                  ),
-                                                ),
-                                              ),
-                                            ).animateOnPageLoad(animationsMap[
-                                                'containerOnPageLoadAnimation27']!),
-                                          ]
-                                              .divide(SizedBox(width: 40.0))
-                                              .addToStart(SizedBox(width: 30.0))
-                                              .addToEnd(SizedBox(width: 30.0)),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
                               if (false)
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
@@ -13566,7 +13082,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               ),
                                             ],
                                             carouselController:
-                                                _model.carouselController6 ??=
+                                                _model.carouselController5 ??=
                                                     CarouselSliderController(),
                                             options: CarouselOptions(
                                               initialPage: 1,
@@ -13584,7 +13100,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               autoPlayCurve: Curves.linear,
                                               pauseAutoPlayInFiniteScroll: true,
                                               onPageChanged: (index, _) =>
-                                                  _model.carouselCurrentIndex6 =
+                                                  _model.carouselCurrentIndex5 =
                                                       index,
                                             ),
                                           ),
@@ -13944,7 +13460,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ],
                                                         carouselController: _model
-                                                                .carouselController7 ??=
+                                                                .carouselController6 ??=
                                                             CarouselSliderController(),
                                                         options:
                                                             CarouselOptions(
@@ -13962,7 +13478,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           autoPlay: false,
                                                           onPageChanged: (index,
                                                                   _) =>
-                                                              _model.carouselCurrentIndex7 =
+                                                              _model.carouselCurrentIndex6 =
                                                                   index,
                                                         ),
                                                       ),

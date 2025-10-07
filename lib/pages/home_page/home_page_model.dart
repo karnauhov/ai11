@@ -53,16 +53,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
   int get carouselCurrentIndex2 => _carouselCurrentIndex2;
 
-  // State field(s) for Carousel widget.
-  CarouselSliderController? carouselController3;
-  int _carouselCurrentIndex3 = 1;
-  set carouselCurrentIndex3(int value) {
-    _carouselCurrentIndex3 = value;
-    debugLogWidgetClass(this);
-  }
-
-  int get carouselCurrentIndex3 => _carouselCurrentIndex3;
-
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController6;
 
@@ -79,6 +69,16 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   late ExpandableController expandableExpandableController10;
 
   // State field(s) for Carousel widget.
+  CarouselSliderController? carouselController3;
+  int _carouselCurrentIndex3 = 1;
+  set carouselCurrentIndex3(int value) {
+    _carouselCurrentIndex3 = value;
+    debugLogWidgetClass(this);
+  }
+
+  int get carouselCurrentIndex3 => _carouselCurrentIndex3;
+
+  // State field(s) for Carousel widget.
   CarouselSliderController? carouselController4;
   int _carouselCurrentIndex4 = 1;
   set carouselCurrentIndex4(int value) {
@@ -87,16 +87,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   }
 
   int get carouselCurrentIndex4 => _carouselCurrentIndex4;
-
-  // State field(s) for Carousel widget.
-  CarouselSliderController? carouselController5;
-  int _carouselCurrentIndex5 = 1;
-  set carouselCurrentIndex5(int value) {
-    _carouselCurrentIndex5 = value;
-    debugLogWidgetClass(this);
-  }
-
-  int get carouselCurrentIndex5 => _carouselCurrentIndex5;
 
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController11;
@@ -114,6 +104,16 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   late ExpandableController expandableExpandableController15;
 
   // State field(s) for Carousel widget.
+  CarouselSliderController? carouselController5;
+  int _carouselCurrentIndex5 = 1;
+  set carouselCurrentIndex5(int value) {
+    _carouselCurrentIndex5 = value;
+    debugLogWidgetClass(this);
+  }
+
+  int get carouselCurrentIndex5 => _carouselCurrentIndex5;
+
+  // State field(s) for Carousel widget.
   CarouselSliderController? carouselController6;
   int _carouselCurrentIndex6 = 1;
   set carouselCurrentIndex6(int value) {
@@ -122,16 +122,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   }
 
   int get carouselCurrentIndex6 => _carouselCurrentIndex6;
-
-  // State field(s) for Carousel widget.
-  CarouselSliderController? carouselController7;
-  int _carouselCurrentIndex7 = 1;
-  set carouselCurrentIndex7(int value) {
-    _carouselCurrentIndex7 = value;
-    debugLogWidgetClass(this);
-  }
-
-  int get carouselCurrentIndex7 => _carouselCurrentIndex7;
 
   final Map<String, DebugDataField> debugGeneratorVariables = {};
   final Map<String, DebugDataField> debugBackendQueries = {};
@@ -205,14 +195,6 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
           ),
           'carouselCurrentIndex6': debugSerializeParam(
             carouselCurrentIndex6,
-            ParamType.int,
-            link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
-            name: 'int',
-            nullable: true,
-          ),
-          'carouselCurrentIndex7': debugSerializeParam(
-            carouselCurrentIndex7,
             ParamType.int,
             link:
                 'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
