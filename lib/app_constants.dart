@@ -19,6 +19,9 @@ abstract class FFAppConstants {
   static const String freelancehuntURL =
       'https://freelancehunt.com/freelancer/oleh_karnaukhov.html';
   static const String telegramURL = 'https://t.me/karnauhov';
+  static const String upworkURL =
+      'https://www.upwork.com/freelancers/~01289a98f6f8840c93';
+  static const String contraURL = 'https://contra.com/oleh_karnaukhov';
   static Map<String, DebugDataField> toDebugSerializableMap() => {
         'websiteURL': debugSerializeParam(
           websiteURL,
@@ -156,6 +159,26 @@ abstract class FFAppConstants {
               'https://app.flutterflow.io/project/ai11-fcaxqx?tab=appValues&appValuesTab=constant',
           searchReference:
               'reference=Eh0KFQoLdGVsZWdyYW1VUkwSBmdjYWVxdnICCAN6AFoLdGVsZWdyYW1VUkw=',
+          name: 'String',
+          nullable: false,
+        ),
+        'upworkURL': debugSerializeParam(
+          upworkURL,
+          ParamType.String,
+          link:
+              'https://app.flutterflow.io/project/ai11-fcaxqx?tab=appValues&appValuesTab=constant',
+          searchReference:
+              'reference=EhsKEwoJdXB3b3JrVVJMEgZrd3FpOGZyAggDegBaCXVwd29ya1VSTA==',
+          name: 'String',
+          nullable: false,
+        ),
+        'contraURL': debugSerializeParam(
+          contraURL,
+          ParamType.String,
+          link:
+              'https://app.flutterflow.io/project/ai11-fcaxqx?tab=appValues&appValuesTab=constant',
+          searchReference:
+              'reference=EhsKEwoJY29udHJhVVJMEgZtZWlidnNyAggDegBaCWNvbnRyYVVSTA==',
           name: 'String',
           nullable: false,
         )

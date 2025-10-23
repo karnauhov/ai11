@@ -155,7 +155,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 700.0.ms,
+            duration: 500.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
           ),
@@ -167,7 +167,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 900.0.ms,
+            duration: 600.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
           ),
@@ -179,13 +179,37 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
-            duration: 1100.0.ms,
+            duration: 700.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
           ),
         ],
       ),
       'containerOnPageLoadAnimation8': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 800.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation9': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 900.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation10': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           MoveEffect(
@@ -209,7 +233,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation9': AnimationInfo(
+      'containerOnPageLoadAnimation11': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -221,7 +245,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation10': AnimationInfo(
+      'containerOnPageLoadAnimation12': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -245,7 +269,31 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation11': AnimationInfo(
+      'containerOnPageLoadAnimation13': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 500.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation14': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation15': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -257,25 +305,25 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation12': AnimationInfo(
+      'containerOnPageLoadAnimation16': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 800.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation17': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation13': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 1100.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
           ),
@@ -293,7 +341,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation14': AnimationInfo(
+      'containerOnPageLoadAnimation18': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           MoveEffect(
@@ -312,7 +360,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation15': AnimationInfo(
+      'containerOnPageLoadAnimation19': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -324,7 +372,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation16': AnimationInfo(
+      'containerOnPageLoadAnimation20': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -348,7 +396,31 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation17': AnimationInfo(
+      'containerOnPageLoadAnimation21': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 500.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation22': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation23': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
@@ -360,25 +432,25 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
         ],
       ),
-      'containerOnPageLoadAnimation18': AnimationInfo(
+      'containerOnPageLoadAnimation24': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          ScaleEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 800.0.ms,
+            begin: Offset(0.0, 0.0),
+            end: Offset(1.0, 1.0),
+          ),
+        ],
+      ),
+      'containerOnPageLoadAnimation25': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 900.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
-          ),
-        ],
-      ),
-      'containerOnPageLoadAnimation19': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 1100.0.ms,
             begin: Offset(0.0, 0.0),
             end: Offset(1.0, 1.0),
           ),
@@ -1537,7 +1609,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               ),
                                               Container(
                                                 width: 100.0,
-                                                height: 172.0,
+                                                height: 300.0,
                                                 decoration: BoxDecoration(
                                                   color: FlutterFlowTheme.of(
                                                           context)
@@ -1547,6 +1619,61 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   children: [
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        // OpenFreelancehunt
+                                                        await launchURL(
+                                                            FFAppConstants
+                                                                .contraURL);
+                                                      },
+                                                      child: Container(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent3,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24.0),
+                                                        ),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            ClipRRect(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/contra.png',
+                                                                width: 30.0,
+                                                                height: 30.0,
+                                                                fit: BoxFit
+                                                                    .cover,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ).animateOnPageLoad(
+                                                        animationsMap[
+                                                            'containerOnPageLoadAnimation5']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -1601,7 +1728,62 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation5']!),
+                                                            'containerOnPageLoadAnimation6']!),
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        // OpenFreelancehunt
+                                                        await launchURL(
+                                                            FFAppConstants
+                                                                .upworkURL);
+                                                      },
+                                                      child: Container(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent3,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24.0),
+                                                        ),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            ClipRRect(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/upwork.png',
+                                                                width: 30.0,
+                                                                height: 30.0,
+                                                                fit: BoxFit
+                                                                    .cover,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ).animateOnPageLoad(
+                                                        animationsMap[
+                                                            'containerOnPageLoadAnimation7']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -1650,7 +1832,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation6']!),
+                                                            'containerOnPageLoadAnimation8']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -1699,7 +1881,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation7']!),
+                                                            'containerOnPageLoadAnimation9']!),
                                                   ].divide(
                                                       SizedBox(height: 10.0)),
                                                 ),
@@ -1931,7 +2113,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ].divide(SizedBox(height: 35.0)),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
-                                            'containerOnPageLoadAnimation8']!),
+                                            'containerOnPageLoadAnimation10']!),
                                       ],
                                     ),
                                   ),
@@ -5387,7 +5569,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation9']!),
+                                                                'containerOnPageLoadAnimation11']!),
                                                         Container(
                                                           width: 175.0,
                                                           height: 261.0,
@@ -5411,7 +5593,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation10']!),
+                                                                'containerOnPageLoadAnimation12']!),
                                                       ],
                                                     ),
                                                   ),
@@ -5470,6 +5652,61 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         // OpenFreelancehunt
                                                         await launchURL(
                                                             FFAppConstants
+                                                                .contraURL);
+                                                      },
+                                                      child: Container(
+                                                        width: 40.0,
+                                                        height: 40.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent3,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24.0),
+                                                        ),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            ClipRRect(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/contra.png',
+                                                                width: 20.0,
+                                                                height: 20.0,
+                                                                fit: BoxFit
+                                                                    .cover,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ).animateOnPageLoad(
+                                                        animationsMap[
+                                                            'containerOnPageLoadAnimation13']!),
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        // OpenFreelancehunt
+                                                        await launchURL(
+                                                            FFAppConstants
                                                                 .freelancehuntURL);
                                                       },
                                                       child: Container(
@@ -5511,7 +5748,62 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation11']!),
+                                                            'containerOnPageLoadAnimation14']!),
+                                                    InkWell(
+                                                      splashColor:
+                                                          Colors.transparent,
+                                                      focusColor:
+                                                          Colors.transparent,
+                                                      hoverColor:
+                                                          Colors.transparent,
+                                                      highlightColor:
+                                                          Colors.transparent,
+                                                      onTap: () async {
+                                                        // OpenFreelancehunt
+                                                        await launchURL(
+                                                            FFAppConstants
+                                                                .upworkURL);
+                                                      },
+                                                      child: Container(
+                                                        width: 40.0,
+                                                        height: 40.0,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .accent3,
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      24.0),
+                                                        ),
+                                                        child: Column(
+                                                          mainAxisSize:
+                                                              MainAxisSize.max,
+                                                          mainAxisAlignment:
+                                                              MainAxisAlignment
+                                                                  .center,
+                                                          children: [
+                                                            ClipRRect(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          8.0),
+                                                              child:
+                                                                  Image.asset(
+                                                                'assets/images/upwork.png',
+                                                                width: 20.0,
+                                                                height: 20.0,
+                                                                fit: BoxFit
+                                                                    .cover,
+                                                              ),
+                                                            ),
+                                                          ],
+                                                        ),
+                                                      ),
+                                                    ).animateOnPageLoad(
+                                                        animationsMap[
+                                                            'containerOnPageLoadAnimation15']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -5560,7 +5852,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation12']!),
+                                                            'containerOnPageLoadAnimation16']!),
                                                     InkWell(
                                                       splashColor:
                                                           Colors.transparent,
@@ -5609,7 +5901,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                       ),
                                                     ).animateOnPageLoad(
                                                         animationsMap[
-                                                            'containerOnPageLoadAnimation13']!),
+                                                            'containerOnPageLoadAnimation17']!),
                                                   ].divide(
                                                       SizedBox(height: 10.0)),
                                                 ),
@@ -9611,7 +9903,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ),
                                           ),
                                         ).animateOnPageLoad(animationsMap[
-                                            'containerOnPageLoadAnimation14']!),
+                                            'containerOnPageLoadAnimation18']!),
                                       ),
                                     ],
                                   ),
@@ -9693,7 +9985,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation15']!),
+                                                                    'containerOnPageLoadAnimation19']!),
                                                             Container(
                                                               width: 175.0,
                                                               height: 261.0,
@@ -9718,7 +10010,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                               ),
                                                             ).animateOnPageLoad(
                                                                 animationsMap[
-                                                                    'containerOnPageLoadAnimation16']!),
+                                                                    'containerOnPageLoadAnimation20']!),
                                                           ],
                                                         ),
                                                       ),
@@ -9780,6 +10072,63 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                             // OpenFreelancehunt
                                                             await launchURL(
                                                                 FFAppConstants
+                                                                    .contraURL);
+                                                          },
+                                                          child: Container(
+                                                            width: 40.0,
+                                                            height: 40.0,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .accent3,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          24.0),
+                                                            ),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/contra.png',
+                                                                    width: 26.0,
+                                                                    height:
+                                                                        26.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ).animateOnPageLoad(
+                                                            animationsMap[
+                                                                'containerOnPageLoadAnimation21']!),
+                                                        InkWell(
+                                                          splashColor: Colors
+                                                              .transparent,
+                                                          focusColor: Colors
+                                                              .transparent,
+                                                          hoverColor: Colors
+                                                              .transparent,
+                                                          highlightColor: Colors
+                                                              .transparent,
+                                                          onTap: () async {
+                                                            // OpenFreelancehunt
+                                                            await launchURL(
+                                                                FFAppConstants
                                                                     .freelancehuntURL);
                                                           },
                                                           child: Container(
@@ -9823,7 +10172,64 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation17']!),
+                                                                'containerOnPageLoadAnimation22']!),
+                                                        InkWell(
+                                                          splashColor: Colors
+                                                              .transparent,
+                                                          focusColor: Colors
+                                                              .transparent,
+                                                          hoverColor: Colors
+                                                              .transparent,
+                                                          highlightColor: Colors
+                                                              .transparent,
+                                                          onTap: () async {
+                                                            // OpenFreelancehunt
+                                                            await launchURL(
+                                                                FFAppConstants
+                                                                    .upworkURL);
+                                                          },
+                                                          child: Container(
+                                                            width: 40.0,
+                                                            height: 40.0,
+                                                            decoration:
+                                                                BoxDecoration(
+                                                              color: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .accent3,
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          24.0),
+                                                            ),
+                                                            child: Column(
+                                                              mainAxisSize:
+                                                                  MainAxisSize
+                                                                      .max,
+                                                              mainAxisAlignment:
+                                                                  MainAxisAlignment
+                                                                      .center,
+                                                              children: [
+                                                                ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              8.0),
+                                                                  child: Image
+                                                                      .asset(
+                                                                    'assets/images/upwork.png',
+                                                                    width: 26.0,
+                                                                    height:
+                                                                        26.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ).animateOnPageLoad(
+                                                            animationsMap[
+                                                                'containerOnPageLoadAnimation23']!),
                                                         InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -9873,7 +10279,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation18']!),
+                                                                'containerOnPageLoadAnimation24']!),
                                                         InkWell(
                                                           splashColor: Colors
                                                               .transparent,
@@ -9923,7 +10329,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                           ),
                                                         ).animateOnPageLoad(
                                                             animationsMap[
-                                                                'containerOnPageLoadAnimation19']!),
+                                                                'containerOnPageLoadAnimation25']!),
                                                       ].divide(SizedBox(
                                                           height: 10.0)),
                                                     ),
