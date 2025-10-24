@@ -1,4 +1,5 @@
 import '/backend/schema/structs/index.dart';
+import '/components/project_tile/project_tile_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -19,6 +20,8 @@ import 'package:provider/provider.dart';
 class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // Models for ProjectTile dynamic component.
+  late FlutterFlowDynamicModels<ProjectTileModel> projectTileModels1;
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController1;
 
@@ -54,6 +57,8 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
   int get carouselCurrentIndex2 => _carouselCurrentIndex2;
 
+  // Models for ProjectTile dynamic component.
+  late FlutterFlowDynamicModels<ProjectTileModel> projectTileModels2;
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController6;
 
@@ -89,6 +94,8 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
   int get carouselCurrentIndex4 => _carouselCurrentIndex4;
 
+  // Models for ProjectTile dynamic component.
+  late FlutterFlowDynamicModels<ProjectTileModel> projectTileModels3;
   // State field(s) for Expandable widget.
   late ExpandableController expandableExpandableController11;
 
@@ -129,21 +136,28 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   final Map<String, FlutterFlowModel> widgetBuilderComponents = {};
   @override
   void initState(BuildContext context) {
+    projectTileModels1 = FlutterFlowDynamicModels(() => ProjectTileModel());
+    projectTileModels2 = FlutterFlowDynamicModels(() => ProjectTileModel());
+    projectTileModels3 = FlutterFlowDynamicModels(() => ProjectTileModel());
+
     debugLogWidgetClass(this);
   }
 
   @override
   void dispose() {
+    projectTileModels1.dispose();
     expandableExpandableController1.dispose();
     expandableExpandableController2.dispose();
     expandableExpandableController3.dispose();
     expandableExpandableController4.dispose();
     expandableExpandableController5.dispose();
+    projectTileModels2.dispose();
     expandableExpandableController6.dispose();
     expandableExpandableController7.dispose();
     expandableExpandableController8.dispose();
     expandableExpandableController9.dispose();
     expandableExpandableController10.dispose();
+    projectTileModels3.dispose();
     expandableExpandableController11.dispose();
     expandableExpandableController12.dispose();
     expandableExpandableController13.dispose();
@@ -212,6 +226,14 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
               value.toWidgetClassDebugData(),
             ),
           ),
+        }.withoutNulls,
+        dynamicComponentStates: {
+          'projectTileModels1 (List<ProjectTile>)':
+              projectTileModels1?.toDynamicWidgetClassDebugData(),
+          'projectTileModels2 (List<ProjectTile>)':
+              projectTileModels2?.toDynamicWidgetClassDebugData(),
+          'projectTileModels3 (List<ProjectTile>)':
+              projectTileModels3?.toDynamicWidgetClassDebugData(),
         }.withoutNulls,
         link:
             'https://app.flutterflow.io/project/ai11-fcaxqx/tab=uiBuilder&page=HomePage',

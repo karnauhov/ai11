@@ -13,6 +13,7 @@ class ProjectStruct extends BaseStruct {
     String? platforms,
     DateTime? lastUpdated,
     String? image,
+    String? video,
     List<LinkStruct>? links,
   })  : _index = index,
         _name = name,
@@ -20,6 +21,7 @@ class ProjectStruct extends BaseStruct {
         _platforms = platforms,
         _lastUpdated = lastUpdated,
         _image = image,
+        _video = video,
         _links = links != null ? LoggableList(links) : null;
 
   // "Index" field.
@@ -84,6 +86,16 @@ class ProjectStruct extends BaseStruct {
 
   bool hasImage() => _image != null;
 
+  // "Video" field.
+  String? _video;
+  String get video => _video ?? '';
+  set video(String? val) {
+    _video = val;
+    debugLog();
+  }
+
+  bool hasVideo() => _video != null;
+
   // "Links" field.
   LoggableList<LinkStruct>? _links;
   List<LinkStruct> get links =>
@@ -111,6 +123,7 @@ class ProjectStruct extends BaseStruct {
         platforms: data['Platforms'] as String?,
         lastUpdated: data['LastUpdated'] as DateTime?,
         image: data['Image'] as String?,
+        video: data['Video'] as String?,
         links: getStructList(
           data['Links'],
           LinkStruct.fromMap,
@@ -127,6 +140,7 @@ class ProjectStruct extends BaseStruct {
         'Platforms': _platforms,
         'LastUpdated': _lastUpdated,
         'Image': _image,
+        'Video': _video,
         'Links': _links?.map((e) => e.toMap()).toList(),
       }.withoutNulls;
 
@@ -154,6 +168,10 @@ class ProjectStruct extends BaseStruct {
         ),
         'Image': serializeParam(
           _image,
+          ParamType.String,
+        ),
+        'Video': serializeParam(
+          _video,
           ParamType.String,
         ),
         'Links': serializeParam(
@@ -192,6 +210,11 @@ class ProjectStruct extends BaseStruct {
         ),
         image: deserializeParam(
           data['Image'],
+          ParamType.String,
+          false,
+        ),
+        video: deserializeParam(
+          data['Video'],
           ParamType.String,
           false,
         ),
@@ -240,6 +263,12 @@ class ProjectStruct extends BaseStruct {
           name: 'String',
           nullable: false,
         ),
+        'Video': debugSerializeParam(
+          video,
+          ParamType.String,
+          name: 'String',
+          nullable: false,
+        ),
         'Links': debugSerializeParam(
           _links,
           ParamType.DataStruct,
@@ -262,12 +291,13 @@ class ProjectStruct extends BaseStruct {
         platforms == other.platforms &&
         lastUpdated == other.lastUpdated &&
         image == other.image &&
+        video == other.video &&
         listEquality.equals(links, other.links);
   }
 
   @override
-  int get hashCode => const ListEquality()
-      .hash([index, name, description, platforms, lastUpdated, image, links]);
+  int get hashCode => const ListEquality().hash(
+      [index, name, description, platforms, lastUpdated, image, video, links]);
 }
 
 ProjectStruct createProjectStruct({
@@ -277,6 +307,7 @@ ProjectStruct createProjectStruct({
   String? platforms,
   DateTime? lastUpdated,
   String? image,
+  String? video,
 }) =>
     ProjectStruct(
       index: index,
@@ -285,4 +316,5 @@ ProjectStruct createProjectStruct({
       platforms: platforms,
       lastUpdated: lastUpdated,
       image: image,
+      video: video,
     );

@@ -1,4 +1,5 @@
 import '/backend/schema/structs/index.dart';
+import '/components/project_tile/project_tile_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -2137,7 +2138,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Last projects',
+                                        'Recent Work',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -2194,309 +2195,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     (projectLapIndex) {
                                               final projectLapItem =
                                                   projectLap[projectLapIndex];
-                                              return Container(
-                                                width: 500.0,
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          20.0),
+                                              return wrapWithModel(
+                                                model: _model.projectTileModels1
+                                                    .getModel(
+                                                  projectLapItem.index
+                                                      .toString(),
+                                                  projectLapIndex,
                                                 ),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    if (projectLapItem.image !=
-                                                            null &&
-                                                        projectLapItem.image !=
-                                                            '')
-                                                      Container(
-                                                        width: 470.0,
-                                                        height: 218.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryBackground,
-                                                          image:
-                                                              DecorationImage(
-                                                            fit: BoxFit.cover,
-                                                            image:
-                                                                Image.network(
-                                                              '${FFAppConstants.websiteURL}/assets/assets/images/${projectLapItem.image}',
-                                                            ).image,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      20.0),
-                                                        ),
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: Builder(builder: (_) {
+                                                  return DebugFlutterFlowModelContext(
+                                                    rootModel: _model.rootModel,
+                                                    child: ProjectTileWidget(
+                                                      key: Key(
+                                                        'Keyrbr_${projectLapItem.index.toString()}',
                                                       ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  0.0,
-                                                                  10.0,
-                                                                  0.0,
-                                                                  0.0),
-                                                      child: Container(
-                                                        width: 470.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      20.0),
-                                                        ),
-                                                        child: Column(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .spaceBetween,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            Column(
-                                                              mainAxisSize:
-                                                                  MainAxisSize
-                                                                      .max,
-                                                              crossAxisAlignment:
-                                                                  CrossAxisAlignment
-                                                                      .start,
-                                                              children: [
-                                                                Padding(
-                                                                  padding: EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          30.0),
-                                                                  child: Text(
-                                                                    projectLapItem
-                                                                        .name,
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.roboto(
-                                                                            fontWeight:
-                                                                                FontWeight.w600,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                          fontSize:
-                                                                              28.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.w600,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                                Column(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .start,
-                                                                  children: [
-                                                                    Text(
-                                                                      projectLapItem
-                                                                          .platforms,
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .override(
-                                                                            font:
-                                                                                GoogleFonts.roboto(
-                                                                              fontWeight: FontWeight.w600,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                            fontSize:
-                                                                                22.0,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FontWeight.w600,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                    ),
-                                                                    Text(
-                                                                      dateTimeFormat(
-                                                                        "MMMM y",
-                                                                        projectLapItem
-                                                                            .lastUpdated!,
-                                                                        locale:
-                                                                            FFLocalizations.of(context).languageCode,
-                                                                      ),
-                                                                      style: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .override(
-                                                                            font:
-                                                                                GoogleFonts.roboto(
-                                                                              fontWeight: FontWeight.normal,
-                                                                              fontStyle: FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                            ),
-                                                                            color:
-                                                                                FlutterFlowTheme.of(context).secondaryText,
-                                                                            fontSize:
-                                                                                16.0,
-                                                                            letterSpacing:
-                                                                                0.0,
-                                                                            fontWeight:
-                                                                                FontWeight.normal,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                    ),
-                                                                  ],
-                                                                ),
-                                                                Padding(
-                                                                  padding: EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          20.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                  child: Text(
-                                                                    projectLapItem
-                                                                        .description,
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.roboto(
-                                                                            fontWeight:
-                                                                                FontWeight.w500,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                          fontSize:
-                                                                              16.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.w500,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                  ),
-                                                                ),
-                                                                Padding(
-                                                                  padding: EdgeInsetsDirectional
-                                                                      .fromSTEB(
-                                                                          0.0,
-                                                                          0.0,
-                                                                          0.0,
-                                                                          15.0),
-                                                                  child:
-                                                                      Container(
-                                                                    width:
-                                                                        470.0,
-                                                                    constraints:
-                                                                        BoxConstraints(
-                                                                      maxHeight:
-                                                                          300.0,
-                                                                    ),
-                                                                    decoration:
-                                                                        BoxDecoration(),
-                                                                    child:
-                                                                        Column(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .min,
-                                                                      children: [
-                                                                        Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
-                                                                              0.0,
-                                                                              10.0,
-                                                                              0.0,
-                                                                              0.0),
-                                                                          child:
-                                                                              Builder(
-                                                                            builder:
-                                                                                (context) {
-                                                                              final link = projectLapItem.links.toList();
-                                                                              _model.debugGeneratorVariables['link${link.length > 100 ? ' (first 100)' : ''}'] = debugSerializeParam(
-                                                                                link.take(100),
-                                                                                ParamType.DataStruct,
-                                                                                isList: true,
-                                                                                link: 'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
-                                                                                name: 'Link',
-                                                                                nullable: false,
-                                                                              );
-                                                                              debugLogWidgetClass(_model);
-
-                                                                              return Wrap(
-                                                                                spacing: 8.0,
-                                                                                runSpacing: 8.0,
-                                                                                alignment: WrapAlignment.center,
-                                                                                crossAxisAlignment: WrapCrossAlignment.start,
-                                                                                direction: Axis.horizontal,
-                                                                                runAlignment: WrapAlignment.start,
-                                                                                verticalDirection: VerticalDirection.down,
-                                                                                clipBehavior: Clip.none,
-                                                                                children: List.generate(link.length, (linkIndex) {
-                                                                                  final linkItem = link[linkIndex];
-                                                                                  return FFButtonWidget(
-                                                                                    onPressed: () async {
-                                                                                      // OpenURL
-                                                                                      await launchURL(linkItem.url);
-                                                                                    },
-                                                                                    text: linkItem.name,
-                                                                                    options: FFButtonOptions(
-                                                                                      width: 90.0,
-                                                                                      height: 30.0,
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                      color: FlutterFlowTheme.of(context).tertiary,
-                                                                                      textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                            font: GoogleFonts.roboto(
-                                                                                              fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                              fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                            ),
-                                                                                            color: Colors.white,
-                                                                                            letterSpacing: 0.0,
-                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                          ),
-                                                                                      elevation: 0.0,
-                                                                                      borderRadius: BorderRadius.circular(8.0),
-                                                                                    ),
-                                                                                    showLoadingIndicator: false,
-                                                                                  );
-                                                                                }),
-                                                                              );
-                                                                            },
-                                                                          ),
-                                                                        ),
-                                                                      ],
-                                                                    ),
-                                                                  ),
-                                                                ),
-                                                              ],
-                                                            ),
-                                                          ],
-                                                        ),
-                                                      ),
+                                                      project: projectLapItem,
+                                                      width: 500,
+                                                      padding: 15,
+                                                      header1Size: 28,
+                                                      header2Size: 22,
+                                                      textSize: 16,
+                                                      buttonTextSize: 14,
                                                     ),
-                                                  ].addToStart(
-                                                      SizedBox(height: 15.0)),
-                                                ),
+                                                  );
+                                                }),
                                               );
                                             }),
                                           );
@@ -5928,7 +5652,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Last projects',
+                                        'Recent Work',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -5986,308 +5710,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                               final projectPhoneItem =
                                                   projectPhone[
                                                       projectPhoneIndex];
-                                              return Column(
-                                                mainAxisSize: MainAxisSize.max,
-                                                children: [
-                                                  Container(
-                                                    width: 340.0,
-                                                    decoration: BoxDecoration(
-                                                      color: FlutterFlowTheme
-                                                              .of(context)
-                                                          .primaryBackground,
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              20.0),
+                                              return wrapWithModel(
+                                                model: _model.projectTileModels2
+                                                    .getModel(
+                                                  projectPhoneItem.index
+                                                      .toString(),
+                                                  projectPhoneIndex,
+                                                ),
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: Builder(builder: (_) {
+                                                  return DebugFlutterFlowModelContext(
+                                                    rootModel: _model.rootModel,
+                                                    child: ProjectTileWidget(
+                                                      key: Key(
+                                                        'Keyr6z_${projectPhoneItem.index.toString()}',
+                                                      ),
+                                                      project: projectPhoneItem,
+                                                      width: 340,
+                                                      padding: 15,
+                                                      header1Size: 20,
+                                                      header2Size: 18,
+                                                      textSize: 14,
+                                                      buttonTextSize: 14,
                                                     ),
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      children: [
-                                                        if (projectPhoneItem
-                                                                    .image !=
-                                                                null &&
-                                                            projectPhoneItem
-                                                                    .image !=
-                                                                '')
-                                                          Container(
-                                                            width: 310.0,
-                                                            height: 175.0,
-                                                            decoration:
-                                                                BoxDecoration(
-                                                              color: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .secondaryBackground,
-                                                              image:
-                                                                  DecorationImage(
-                                                                fit: BoxFit
-                                                                    .cover,
-                                                                image: Image
-                                                                    .network(
-                                                                  '${FFAppConstants.websiteURL}/assets/assets/images/${projectPhoneItem.image}',
-                                                                ).image,
-                                                              ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          20.0),
-                                                            ),
-                                                          ),
-                                                        Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      20.0,
-                                                                      20.0,
-                                                                      20.0,
-                                                                      0.0),
-                                                          child: Column(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            crossAxisAlignment:
-                                                                CrossAxisAlignment
-                                                                    .start,
-                                                            children: [
-                                                              Padding(
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            12.0),
-                                                                child: Text(
-                                                                  projectPhoneItem
-                                                                      .name,
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .roboto(
-                                                                          fontWeight:
-                                                                              FontWeight.w600,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        fontSize:
-                                                                            20.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight:
-                                                                            FontWeight.w600,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                ),
-                                                              ),
-                                                              Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .max,
-                                                                crossAxisAlignment:
-                                                                    CrossAxisAlignment
-                                                                        .start,
-                                                                children: [
-                                                                  Text(
-                                                                    projectPhoneItem
-                                                                        .platforms,
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.roboto(
-                                                                            fontWeight:
-                                                                                FontWeight.w600,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                          fontSize:
-                                                                              18.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.w600,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                  ),
-                                                                  Text(
-                                                                    dateTimeFormat(
-                                                                      "MMMM y",
-                                                                      projectPhoneItem
-                                                                          .lastUpdated!,
-                                                                      locale: FFLocalizations.of(
-                                                                              context)
-                                                                          .languageCode,
-                                                                    ),
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .override(
-                                                                          font:
-                                                                              GoogleFonts.roboto(
-                                                                            fontWeight:
-                                                                                FontWeight.normal,
-                                                                            fontStyle:
-                                                                                FlutterFlowTheme.of(context).bodyMedium.fontStyle,
-                                                                          ),
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).secondaryText,
-                                                                          fontSize:
-                                                                              15.0,
-                                                                          letterSpacing:
-                                                                              0.0,
-                                                                          fontWeight:
-                                                                              FontWeight.normal,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                              Padding(
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                child: Text(
-                                                                  projectPhoneItem
-                                                                      .description,
-                                                                  style: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .bodyMedium
-                                                                      .override(
-                                                                        font: GoogleFonts
-                                                                            .roboto(
-                                                                          fontWeight:
-                                                                              FontWeight.w500,
-                                                                          fontStyle: FlutterFlowTheme.of(context)
-                                                                              .bodyMedium
-                                                                              .fontStyle,
-                                                                        ),
-                                                                        fontSize:
-                                                                            14.0,
-                                                                        letterSpacing:
-                                                                            0.0,
-                                                                        fontWeight:
-                                                                            FontWeight.w500,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                ),
-                                                              ),
-                                                              Padding(
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            8.0),
-                                                                child:
-                                                                    Container(
-                                                                  width: 300.0,
-                                                                  constraints:
-                                                                      BoxConstraints(
-                                                                    maxHeight:
-                                                                        300.0,
-                                                                  ),
-                                                                  decoration:
-                                                                      BoxDecoration(),
-                                                                  child: Column(
-                                                                    mainAxisSize:
-                                                                        MainAxisSize
-                                                                            .min,
-                                                                    children: [
-                                                                      Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                                                            0.0,
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                        child:
-                                                                            Builder(
-                                                                          builder:
-                                                                              (context) {
-                                                                            final link =
-                                                                                projectPhoneItem.links.toList();
-                                                                            _model.debugGeneratorVariables['link${link.length > 100 ? ' (first 100)' : ''}'] =
-                                                                                debugSerializeParam(
-                                                                              link.take(100),
-                                                                              ParamType.DataStruct,
-                                                                              isList: true,
-                                                                              link: 'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
-                                                                              name: 'Link',
-                                                                              nullable: false,
-                                                                            );
-                                                                            debugLogWidgetClass(_model);
-
-                                                                            return Wrap(
-                                                                              spacing: 8.0,
-                                                                              runSpacing: 8.0,
-                                                                              alignment: WrapAlignment.center,
-                                                                              crossAxisAlignment: WrapCrossAlignment.start,
-                                                                              direction: Axis.horizontal,
-                                                                              runAlignment: WrapAlignment.start,
-                                                                              verticalDirection: VerticalDirection.down,
-                                                                              clipBehavior: Clip.none,
-                                                                              children: List.generate(link.length, (linkIndex) {
-                                                                                final linkItem = link[linkIndex];
-                                                                                return FFButtonWidget(
-                                                                                  onPressed: () async {
-                                                                                    // OpenURL
-                                                                                    await launchURL(linkItem.url);
-                                                                                  },
-                                                                                  text: linkItem.name,
-                                                                                  options: FFButtonOptions(
-                                                                                    width: 90.0,
-                                                                                    height: 30.0,
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                    iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                    color: FlutterFlowTheme.of(context).tertiary,
-                                                                                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                          font: GoogleFonts.roboto(
-                                                                                            fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                            fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                          ),
-                                                                                          color: Colors.white,
-                                                                                          letterSpacing: 0.0,
-                                                                                          fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                          fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                        ),
-                                                                                    elevation: 0.0,
-                                                                                    borderRadius: BorderRadius.circular(8.0),
-                                                                                  ),
-                                                                                  showLoadingIndicator: false,
-                                                                                );
-                                                                              }),
-                                                                            );
-                                                                          },
-                                                                        ),
-                                                                      ),
-                                                                    ],
-                                                                  ),
-                                                                ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
-                                                      ].addToStart(SizedBox(
-                                                          height: 15.0)),
-                                                    ),
-                                                  ),
-                                                ].divide(
-                                                    SizedBox(height: 30.0)),
+                                                  );
+                                                }),
                                               );
                                             }),
                                           );
@@ -9557,7 +9005,6 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         ),
                                         Container(
                                           width: 280.0,
-                                          height: 460.0,
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
@@ -9857,7 +9304,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Last projects',
+                                        'Recent Work',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -9914,332 +9361,32 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                     (projectPadIndex) {
                                               final projectPadItem =
                                                   projectPad[projectPadIndex];
-                                              return Container(
-                                                width: 340.0,
-                                                decoration: BoxDecoration(
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryBackground,
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          20.0),
+                                              return wrapWithModel(
+                                                model: _model.projectTileModels3
+                                                    .getModel(
+                                                  projectPadItem.index
+                                                      .toString(),
+                                                  projectPadIndex,
                                                 ),
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    if (projectPadItem.image !=
-                                                            null &&
-                                                        projectPadItem.image !=
-                                                            '')
-                                                      Container(
-                                                        width: 310.0,
-                                                        height: 175.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          color: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .secondaryBackground,
-                                                          image:
-                                                              DecorationImage(
-                                                            fit: BoxFit.cover,
-                                                            image:
-                                                                Image.network(
-                                                              '${FFAppConstants.websiteURL}/assets/assets/images/${projectPadItem.image}',
-                                                            ).image,
-                                                          ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      20.0),
-                                                        ),
+                                                updateCallback: () =>
+                                                    safeSetState(() {}),
+                                                child: Builder(builder: (_) {
+                                                  return DebugFlutterFlowModelContext(
+                                                    rootModel: _model.rootModel,
+                                                    child: ProjectTileWidget(
+                                                      key: Key(
+                                                        'Key215_${projectPadItem.index.toString()}',
                                                       ),
-                                                    Padding(
-                                                      padding:
-                                                          EdgeInsetsDirectional
-                                                              .fromSTEB(
-                                                                  12.0,
-                                                                  20.0,
-                                                                  12.0,
-                                                                  0.0),
-                                                      child: Column(
-                                                        mainAxisSize:
-                                                            MainAxisSize.max,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        12.0),
-                                                            child: Text(
-                                                              projectPadItem
-                                                                  .name,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .roboto(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w600,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    fontSize:
-                                                                        20.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w600,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                          Column(
-                                                            mainAxisSize:
-                                                                MainAxisSize
-                                                                    .max,
-                                                            crossAxisAlignment:
-                                                                CrossAxisAlignment
-                                                                    .start,
-                                                            children: [
-                                                              Text(
-                                                                projectPadItem
-                                                                    .platforms,
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      font: GoogleFonts
-                                                                          .roboto(
-                                                                        fontWeight:
-                                                                            FontWeight.w600,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                      fontSize:
-                                                                          18.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w600,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                              ),
-                                                              Text(
-                                                                dateTimeFormat(
-                                                                  "MMMM y",
-                                                                  projectPadItem
-                                                                      .lastUpdated!,
-                                                                  locale: FFLocalizations.of(
-                                                                          context)
-                                                                      .languageCode,
-                                                                ),
-                                                                style: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      font: GoogleFonts
-                                                                          .roboto(
-                                                                        fontWeight:
-                                                                            FontWeight.normal,
-                                                                        fontStyle: FlutterFlowTheme.of(context)
-                                                                            .bodyMedium
-                                                                            .fontStyle,
-                                                                      ),
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryText,
-                                                                      fontSize:
-                                                                          15.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .normal,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        10.0,
-                                                                        0.0,
-                                                                        0.0),
-                                                            child: Text(
-                                                              projectPadItem
-                                                                  .description,
-                                                              style: FlutterFlowTheme
-                                                                      .of(context)
-                                                                  .bodyMedium
-                                                                  .override(
-                                                                    font: GoogleFonts
-                                                                        .roboto(
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w500,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                                    fontSize:
-                                                                        14.0,
-                                                                    letterSpacing:
-                                                                        0.0,
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .w500,
-                                                                    fontStyle: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyMedium
-                                                                        .fontStyle,
-                                                                  ),
-                                                            ),
-                                                          ),
-                                                          Padding(
-                                                            padding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        0.0,
-                                                                        0.0,
-                                                                        0.0,
-                                                                        8.0),
-                                                            child: Container(
-                                                              width: 300.0,
-                                                              constraints:
-                                                                  BoxConstraints(
-                                                                maxHeight:
-                                                                    300.0,
-                                                              ),
-                                                              decoration:
-                                                                  BoxDecoration(),
-                                                              child: Column(
-                                                                mainAxisSize:
-                                                                    MainAxisSize
-                                                                        .min,
-                                                                children: [
-                                                                  Padding(
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            10.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child:
-                                                                        Builder(
-                                                                      builder:
-                                                                          (context) {
-                                                                        final link = projectPadItem
-                                                                            .links
-                                                                            .toList();
-                                                                        _model.debugGeneratorVariables['link${link.length > 100 ? ' (first 100)' : ''}'] =
-                                                                            debugSerializeParam(
-                                                                          link.take(
-                                                                              100),
-                                                                          ParamType
-                                                                              .DataStruct,
-                                                                          isList:
-                                                                              true,
-                                                                          link:
-                                                                              'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
-                                                                          name:
-                                                                              'Link',
-                                                                          nullable:
-                                                                              false,
-                                                                        );
-                                                                        debugLogWidgetClass(
-                                                                            _model);
-
-                                                                        return Wrap(
-                                                                          spacing:
-                                                                              8.0,
-                                                                          runSpacing:
-                                                                              8.0,
-                                                                          alignment:
-                                                                              WrapAlignment.center,
-                                                                          crossAxisAlignment:
-                                                                              WrapCrossAlignment.start,
-                                                                          direction:
-                                                                              Axis.horizontal,
-                                                                          runAlignment:
-                                                                              WrapAlignment.start,
-                                                                          verticalDirection:
-                                                                              VerticalDirection.down,
-                                                                          clipBehavior:
-                                                                              Clip.none,
-                                                                          children: List.generate(
-                                                                              link.length,
-                                                                              (linkIndex) {
-                                                                            final linkItem =
-                                                                                link[linkIndex];
-                                                                            return FFButtonWidget(
-                                                                              onPressed: () async {
-                                                                                // OpenURL
-                                                                                await launchURL(linkItem.url);
-                                                                              },
-                                                                              text: linkItem.name,
-                                                                              options: FFButtonOptions(
-                                                                                width: 90.0,
-                                                                                height: 30.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                color: FlutterFlowTheme.of(context).tertiary,
-                                                                                textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                      font: GoogleFonts.roboto(
-                                                                                        fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                        fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                      ),
-                                                                                      color: Colors.white,
-                                                                                      letterSpacing: 0.0,
-                                                                                      fontWeight: FlutterFlowTheme.of(context).titleSmall.fontWeight,
-                                                                                      fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
-                                                                                    ),
-                                                                                elevation: 0.0,
-                                                                                borderRadius: BorderRadius.circular(8.0),
-                                                                              ),
-                                                                              showLoadingIndicator: false,
-                                                                            );
-                                                                          }),
-                                                                        );
-                                                                      },
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
+                                                      project: projectPadItem,
+                                                      width: 340,
+                                                      padding: 15,
+                                                      header1Size: 20,
+                                                      header2Size: 18,
+                                                      textSize: 14,
+                                                      buttonTextSize: 14,
                                                     ),
-                                                  ].addToStart(
-                                                      SizedBox(height: 15.0)),
-                                                ),
+                                                  );
+                                                }),
                                               );
                                             }),
                                           );
