@@ -125,34 +125,20 @@ class _ProjectTileWidgetState extends State<ProjectTileWidget> with RouteAware {
                 if ((widget!.project?.image != null &&
                         widget!.project?.image != '') &&
                     !_model.showVideo)
-                  InkWell(
-                    splashColor: Colors.transparent,
-                    focusColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    highlightColor: Colors.transparent,
-                    onTap: () async {
-                      if (widget!.project?.video != null &&
-                          widget!.project?.video != '') {
-                        // ShowVideo
-                        _model.showVideo = true;
-                        safeSetState(() {});
-                      }
-                    },
-                    child: Container(
-                      width: ((widget!.width!) - (widget!.padding!) * 2)
-                          .toDouble(),
-                      height:
-                          ((widget!.width!) - (widget!.padding!) * 2) * 0.5638,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: Image.network(
-                            '${FFAppConstants.websiteURL}/assets/assets/images/${widget!.project?.image}',
-                          ).image,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
+                  Container(
+                    width:
+                        ((widget!.width!) - (widget!.padding!) * 2).toDouble(),
+                    height:
+                        ((widget!.width!) - (widget!.padding!) * 2) * 0.5638,
+                    decoration: BoxDecoration(
+                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: Image.network(
+                          '${FFAppConstants.websiteURL}/assets/assets/images/${widget!.project?.image}',
+                        ).image,
                       ),
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
                   ),
                 if ((widget!.project?.video != null &&
