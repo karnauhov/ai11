@@ -161,6 +161,17 @@ void debugLogGlobalProperty(
           });
 }
 
+void debugLogAppState(FFAppState appState) {
+  debouncedDebugLogging(
+      'fbcc19a787981a30d86b10103c2f3951604b2ae6',
+      () => {
+            'event_type': 'variable',
+            'data_source': 'appState',
+            'data': AppStateDebugData(values: appState.toDebugSerializableMap())
+                .serializedBufferString,
+          });
+}
+
 void debugLogAppConstant() {
   debouncedDebugLogging(
       '01fb7fae5dd1febbd23f5104f58cd88e8443668b',

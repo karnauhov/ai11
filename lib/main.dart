@@ -1,3 +1,4 @@
+import 'package:provider/provider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -17,6 +18,13 @@ void main() async {
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
   debugLogAppConstant();
+
+  final appState = FFAppState(); // Initialize FFAppState
+  await appState.initializePersistedState();
+  debugLogAppState(appState);
+  appState.addListener(() {
+    debugLogAppState(appState);
+  });
 
   final originalErrorWidgetBuilder = ErrorWidget.builder;
   ErrorWidget.builder = (FlutterErrorDetails details) {
@@ -76,12 +84,17 @@ Stack trace: ${filteredStackTrace.join("\n")}''';
   Timer.periodic(const Duration(seconds: 2), (timer) {
     EasyDebounce.fire('405ebf2ff50c295c675b5802889ea941f081fd51');
     EasyDebounce.cancel('405ebf2ff50c295c675b5802889ea941f081fd51');
+    EasyDebounce.fire('fbcc19a787981a30d86b10103c2f3951604b2ae6');
+    EasyDebounce.cancel('fbcc19a787981a30d86b10103c2f3951604b2ae6');
 
     EasyDebounce.fire('508f3c74205c87928b71f49040062e732f9c20b0');
     EasyDebounce.cancel('508f3c74205c87928b71f49040062e732f9c20b0');
   });
 
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => appState,
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatefulWidget {
