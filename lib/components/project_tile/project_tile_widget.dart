@@ -174,7 +174,7 @@ class _ProjectTileWidgetState extends State<ProjectTileWidget> with RouteAware {
                             0.5638,
                         autoPlay: true,
                         looping: true,
-                        showControls: true,
+                        showControls: false,
                         allowFullScreen: false,
                         allowPlaybackSpeedMenu: false,
                       ),
