@@ -2180,8 +2180,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           debugLogWidgetClass(_model);
 
                                           return Wrap(
-                                            spacing: 30.0,
-                                            runSpacing: 30.0,
+                                            spacing: 10.0,
+                                            runSpacing: 10.0,
                                             alignment: WrapAlignment.start,
                                             crossAxisAlignment:
                                                 WrapCrossAlignment.start,
@@ -2212,7 +2212,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         'Keyrbr_${projectLapItem.index.toString()}',
                                                       ),
                                                       project: projectLapItem,
-                                                      width: 500,
+                                                      width: 550,
                                                       padding: 15,
                                                       header1Size: 28,
                                                       header2Size: 22,
@@ -5638,7 +5638,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 30.0, 20.0, 30.0),
+                                    10.0, 10.0, 10.0, 10.0),
                                 child: Container(
                                   width: double.infinity,
                                   constraints: BoxConstraints(
@@ -5727,10 +5727,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                         'Keyr6z_${projectPhoneItem.index.toString()}',
                                                       ),
                                                       project: projectPhoneItem,
-                                                      width: 340,
-                                                      padding: 15,
-                                                      header1Size: 20,
-                                                      header2Size: 18,
+                                                      width: 320,
+                                                      padding: 10,
+                                                      header1Size: 18,
+                                                      header2Size: 16,
                                                       textSize: 14,
                                                       buttonTextSize: 14,
                                                     ),
@@ -9290,7 +9290,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ),
                               Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 30.0, 20.0, 30.0),
+                                    20.0, 20.0, 20.0, 20.0),
                                 child: Container(
                                   width: double.infinity,
                                   constraints: BoxConstraints(
@@ -9346,8 +9346,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           debugLogWidgetClass(_model);
 
                                           return Wrap(
-                                            spacing: 20.0,
-                                            runSpacing: 20.0,
+                                            spacing: 10.0,
+                                            runSpacing: 10.0,
                                             alignment: WrapAlignment.start,
                                             crossAxisAlignment:
                                                 WrapCrossAlignment.start,

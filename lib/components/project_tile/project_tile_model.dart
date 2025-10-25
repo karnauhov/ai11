@@ -1,7 +1,7 @@
 import '/backend/schema/structs/index.dart';
+import '/components/video_preview/video_preview_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'project_tile_widget.dart' show ProjectTileWidget;

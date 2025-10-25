@@ -1,7 +1,7 @@
 import '/backend/schema/structs/index.dart';
+import '/components/video_preview/video_preview_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_video_player.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
@@ -120,18 +120,45 @@ class _ProjectTileWidgetState extends State<ProjectTileWidget> with RouteAware {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Stack(
-              children: [
-                if ((widget!.project?.image != null &&
-                        widget!.project?.image != '') &&
-                    !_model.showVideo)
-                  Container(
+            if ((widget!.project?.image != null &&
+                    widget!.project?.image != '') &&
+                !_model.showVideo)
+              Builder(
+                builder: (context) => InkWell(
+                  splashColor: Colors.transparent,
+                  focusColor: Colors.transparent,
+                  hoverColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  onTap: () async {
+                    if (widget!.project!.hasVideo()) {
+                      // ShowVideo
+                      await showDialog(
+                        barrierColor:
+                            FlutterFlowTheme.of(context).secondaryText,
+                        context: context,
+                        builder: (dialogContext) {
+                          return Dialog(
+                            elevation: 0,
+                            insetPadding: EdgeInsets.zero,
+                            backgroundColor: Colors.transparent,
+                            alignment: AlignmentDirectional(0.0, -1.0)
+                                .resolve(Directionality.of(context)),
+                            child: VideoPreviewWidget(
+                              videoURL:
+                                  '${FFAppConstants.websiteURL}/assets/assets/videos/${widget!.project?.video}',
+                            ),
+                          );
+                        },
+                      );
+                    }
+                  },
+                  child: Container(
                     width:
                         ((widget!.width!) - (widget!.padding!) * 2).toDouble(),
                     height:
                         ((widget!.width!) - (widget!.padding!) * 2) * 0.5638,
                     decoration: BoxDecoration(
-                      color: FlutterFlowTheme.of(context).secondaryBackground,
+                      color: FlutterFlowTheme.of(context).primaryBackground,
                       image: DecorationImage(
                         fit: BoxFit.cover,
                         image: Image.network(
@@ -139,35 +166,14 @@ class _ProjectTileWidgetState extends State<ProjectTileWidget> with RouteAware {
                         ).image,
                       ),
                       borderRadius: BorderRadius.circular(20.0),
-                    ),
-                  ),
-                if ((widget!.project?.video != null &&
-                        widget!.project?.video != '') &&
-                    _model.showVideo)
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                      child: FlutterFlowVideoPlayer(
-                        path:
-                            '${FFAppConstants.websiteURL}/assets/assets/videos/${widget!.project?.video}',
-                        videoType: VideoType.network,
-                        width: ((widget!.width!) - (widget!.padding!) * 2)
-                            .toDouble(),
-                        height: ((widget!.width!) - (widget!.padding!) * 2) *
-                            0.5638,
-                        autoPlay: true,
-                        looping: true,
-                        showControls: false,
-                        allowFullScreen: false,
-                        allowPlaybackSpeedMenu: false,
+                      border: Border.all(
+                        color: FlutterFlowTheme.of(context).accent3,
+                        width: 1.0,
                       ),
                     ),
                   ),
-              ],
-            ),
+                ),
+              ),
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
               child: Container(
@@ -356,40 +362,41 @@ class _ProjectTileWidgetState extends State<ProjectTileWidget> with RouteAware {
                                                   .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .tertiary,
-                                              textStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .titleSmall
-                                                      .override(
-                                                        font:
-                                                            GoogleFonts.roboto(
-                                                          fontWeight:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontWeight,
-                                                          fontStyle:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmall
-                                                                  .fontStyle,
-                                                        ),
-                                                        color: Colors.white,
-                                                        fontSize: widget!
-                                                            .buttonTextSize
-                                                            ?.toDouble(),
-                                                        letterSpacing: 0.0,
-                                                        fontWeight:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .fontWeight,
-                                                        fontStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .titleSmall
-                                                                .fontStyle,
-                                                      ),
+                                                      .accent3,
+                                              textStyle: FlutterFlowTheme.of(
+                                                      context)
+                                                  .titleSmall
+                                                  .override(
+                                                    font: GoogleFonts.roboto(
+                                                      fontWeight:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontWeight,
+                                                      fontStyle:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .titleSmall
+                                                              .fontStyle,
+                                                    ),
+                                                    color: FlutterFlowTheme.of(
+                                                            context)
+                                                        .alternate,
+                                                    fontSize: widget!
+                                                        .buttonTextSize
+                                                        ?.toDouble(),
+                                                    letterSpacing: 0.0,
+                                                    fontWeight:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontWeight,
+                                                    fontStyle:
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .titleSmall
+                                                            .fontStyle,
+                                                  ),
                                               elevation: 0.0,
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
