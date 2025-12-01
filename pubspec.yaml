@@ -1,7 +1,5 @@
 name: ai11
-description: >
-  Personal website of Oleh Karnaukhov - a professional portfolio (my skills, 
-  completed projects, experience and business services) 
+description: Aggregating info in convenient, useful apps
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.

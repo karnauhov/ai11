@@ -25,7 +25,9 @@ GlobalKey<NavigatorState> appNavigatorKey = GlobalKey<NavigatorState>();
 
 const debugRouteLinkMap = {
   '/home':
-      'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage'
+      'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
+  '/projects':
+      'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Projects'
 };
 
 class AppStateNotifier extends ChangeNotifier {
@@ -59,7 +61,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                       ),
                     ),
             )
-          : HomePageWidget(),
+          : HomeWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -76,12 +78,22 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
                           ),
                         ),
                 )
-              : HomePageWidget(),
+              : HomeWidget(),
         ),
         FFRoute(
-          name: HomePageWidget.routeName,
-          path: HomePageWidget.routePath,
-          builder: (context, params) => HomePageWidget(),
+          name: HomeWidget.routeName,
+          path: HomeWidget.routePath,
+          builder: (context, params) => HomeWidget(),
+        ),
+        FFRoute(
+          name: ProjectsWidget.routeName,
+          path: ProjectsWidget.routePath,
+          builder: (context, params) => ProjectsWidget(
+            id: params.getParam(
+              'id',
+              ParamType.int,
+            ),
+          ),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],

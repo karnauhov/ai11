@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:math';
 import 'dart:ui';
-import 'home_page_widget.dart' show HomePageWidget;
+import 'home_widget.dart' show HomeWidget;
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class HomePageModel extends FlutterFlowModel<HomePageWidget> {
+class HomeModel extends FlutterFlowModel<HomeWidget> {
   ///  State fields for stateful widgets in this page.
 
   // Models for ProjectTile dynamic component.
@@ -172,7 +172,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex1,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           ),
@@ -180,7 +180,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex2,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           ),
@@ -188,7 +188,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex3,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           ),
@@ -196,7 +196,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex4,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           ),
@@ -204,7 +204,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex5,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           ),
@@ -212,7 +212,7 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
             carouselCurrentIndex6,
             ParamType.int,
             link:
-                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
             name: 'int',
             nullable: true,
           )
@@ -236,8 +236,8 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
               projectTileModels3?.toDynamicWidgetClassDebugData(),
         }.withoutNulls,
         link:
-            'https://app.flutterflow.io/project/ai11-fcaxqx/tab=uiBuilder&page=HomePage',
-        searchReference: 'reference=OghIb21lUGFnZVABWghIb21lUGFnZQ==',
-        widgetClassName: 'HomePage',
+            'https://app.flutterflow.io/project/ai11-fcaxqx/tab=uiBuilder&page=Home',
+        searchReference: 'reference=OgRIb21lUAFaBEhvbWU=',
+        widgetClassName: 'Home',
       );
 }

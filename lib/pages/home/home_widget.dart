@@ -15,22 +15,22 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'home_page_model.dart';
-export 'home_page_model.dart';
+import 'home_model.dart';
+export 'home_model.dart';
 
-class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({super.key});
+class HomeWidget extends StatefulWidget {
+  const HomeWidget({super.key});
 
-  static String routeName = 'HomePage';
+  static String routeName = 'Home';
   static String routePath = '/home';
 
   @override
-  State<HomePageWidget> createState() => _HomePageWidgetState();
+  State<HomeWidget> createState() => _HomeWidgetState();
 }
 
-class _HomePageWidgetState extends State<HomePageWidget>
+class _HomeWidgetState extends State<HomeWidget>
     with TickerProviderStateMixin, RouteAware {
-  late HomePageModel _model;
+  late HomeModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -39,7 +39,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomePageModel());
+    _model = createModel(context, () => HomeModel());
 
     _model.expandableExpandableController1 =
         ExpandableController(initialExpanded: true);
@@ -471,7 +471,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
   }
 
   @override
-  void didUpdateWidget(HomePageWidget oldWidget) {
+  void didUpdateWidget(HomeWidget oldWidget) {
     super.didUpdateWidget(oldWidget);
     _model.widget = widget;
   }
@@ -2138,7 +2138,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Recent Work',
+                                        'Projects',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -2173,7 +2173,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ParamType.DataStruct,
                                             isList: true,
                                             link:
-                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
                                             name: 'Project',
                                             nullable: false,
                                           );
@@ -5652,7 +5652,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Recent Work',
+                                        'Projects',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -5687,7 +5687,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ParamType.DataStruct,
                                             isList: true,
                                             link:
-                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
                                             name: 'Project',
                                             nullable: false,
                                           );
@@ -9304,7 +9304,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Text(
-                                        'Recent Work',
+                                        'Projects',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
@@ -9339,7 +9339,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                             ParamType.DataStruct,
                                             isList: true,
                                             link:
-                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=HomePage',
+                                                'https://app.flutterflow.io/project/ai11-fcaxqx?tab=uiBuilder&page=Home',
                                             name: 'Project',
                                             nullable: false,
                                           );

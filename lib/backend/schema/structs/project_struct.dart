@@ -9,17 +9,21 @@ class ProjectStruct extends BaseStruct {
   ProjectStruct({
     int? index,
     String? name,
+    String? title,
     String? description,
     String? platforms,
     DateTime? lastUpdated,
+    String? fullDescription,
     String? image,
     String? video,
     List<LinkStruct>? links,
   })  : _index = index,
         _name = name,
+        _title = title,
         _description = description,
         _platforms = platforms,
         _lastUpdated = lastUpdated,
+        _fullDescription = fullDescription,
         _image = image,
         _video = video,
         _links = links != null ? LoggableList(links) : null;
@@ -45,6 +49,16 @@ class ProjectStruct extends BaseStruct {
   }
 
   bool hasName() => _name != null;
+
+  // "Title" field.
+  String? _title;
+  String get title => _title ?? '';
+  set title(String? val) {
+    _title = val;
+    debugLog();
+  }
+
+  bool hasTitle() => _title != null;
 
   // "Description" field.
   String? _description;
@@ -75,6 +89,16 @@ class ProjectStruct extends BaseStruct {
   }
 
   bool hasLastUpdated() => _lastUpdated != null;
+
+  // "FullDescription" field.
+  String? _fullDescription;
+  String get fullDescription => _fullDescription ?? '';
+  set fullDescription(String? val) {
+    _fullDescription = val;
+    debugLog();
+  }
+
+  bool hasFullDescription() => _fullDescription != null;
 
   // "Image" field.
   String? _image;
@@ -119,9 +143,11 @@ class ProjectStruct extends BaseStruct {
   static ProjectStruct fromMap(Map<String, dynamic> data) => ProjectStruct(
         index: castToType<int>(data['Index']),
         name: data['Name'] as String?,
+        title: data['Title'] as String?,
         description: data['Description'] as String?,
         platforms: data['Platforms'] as String?,
         lastUpdated: data['LastUpdated'] as DateTime?,
+        fullDescription: data['FullDescription'] as String?,
         image: data['Image'] as String?,
         video: data['Video'] as String?,
         links: getStructList(
@@ -136,9 +162,11 @@ class ProjectStruct extends BaseStruct {
   Map<String, dynamic> toMap() => {
         'Index': _index,
         'Name': _name,
+        'Title': _title,
         'Description': _description,
         'Platforms': _platforms,
         'LastUpdated': _lastUpdated,
+        'FullDescription': _fullDescription,
         'Image': _image,
         'Video': _video,
         'Links': _links?.map((e) => e.toMap()).toList(),
@@ -154,6 +182,10 @@ class ProjectStruct extends BaseStruct {
           _name,
           ParamType.String,
         ),
+        'Title': serializeParam(
+          _title,
+          ParamType.String,
+        ),
         'Description': serializeParam(
           _description,
           ParamType.String,
@@ -165,6 +197,10 @@ class ProjectStruct extends BaseStruct {
         'LastUpdated': serializeParam(
           _lastUpdated,
           ParamType.DateTime,
+        ),
+        'FullDescription': serializeParam(
+          _fullDescription,
+          ParamType.String,
         ),
         'Image': serializeParam(
           _image,
@@ -193,6 +229,11 @@ class ProjectStruct extends BaseStruct {
           ParamType.String,
           false,
         ),
+        title: deserializeParam(
+          data['Title'],
+          ParamType.String,
+          false,
+        ),
         description: deserializeParam(
           data['Description'],
           ParamType.String,
@@ -206,6 +247,11 @@ class ProjectStruct extends BaseStruct {
         lastUpdated: deserializeParam(
           data['LastUpdated'],
           ParamType.DateTime,
+          false,
+        ),
+        fullDescription: deserializeParam(
+          data['FullDescription'],
+          ParamType.String,
           false,
         ),
         image: deserializeParam(
@@ -239,6 +285,12 @@ class ProjectStruct extends BaseStruct {
           name: 'String',
           nullable: false,
         ),
+        'Title': debugSerializeParam(
+          title,
+          ParamType.String,
+          name: 'String',
+          nullable: false,
+        ),
         'Description': debugSerializeParam(
           description,
           ParamType.String,
@@ -256,6 +308,12 @@ class ProjectStruct extends BaseStruct {
           ParamType.DateTime,
           name: 'DateTime',
           nullable: true,
+        ),
+        'FullDescription': debugSerializeParam(
+          fullDescription,
+          ParamType.String,
+          name: 'String',
+          nullable: false,
         ),
         'Image': debugSerializeParam(
           image,
@@ -287,34 +345,50 @@ class ProjectStruct extends BaseStruct {
     return other is ProjectStruct &&
         index == other.index &&
         name == other.name &&
+        title == other.title &&
         description == other.description &&
         platforms == other.platforms &&
         lastUpdated == other.lastUpdated &&
+        fullDescription == other.fullDescription &&
         image == other.image &&
         video == other.video &&
         listEquality.equals(links, other.links);
   }
 
   @override
-  int get hashCode => const ListEquality().hash(
-      [index, name, description, platforms, lastUpdated, image, video, links]);
+  int get hashCode => const ListEquality().hash([
+        index,
+        name,
+        title,
+        description,
+        platforms,
+        lastUpdated,
+        fullDescription,
+        image,
+        video,
+        links
+      ]);
 }
 
 ProjectStruct createProjectStruct({
   int? index,
   String? name,
+  String? title,
   String? description,
   String? platforms,
   DateTime? lastUpdated,
+  String? fullDescription,
   String? image,
   String? video,
 }) =>
     ProjectStruct(
       index: index,
       name: name,
+      title: title,
       description: description,
       platforms: platforms,
       lastUpdated: lastUpdated,
+      fullDescription: fullDescription,
       image: image,
       video: video,
     );
